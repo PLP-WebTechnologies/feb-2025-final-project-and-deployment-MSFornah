@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - MenaVista</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MenaVista</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="checkout.html" class="cart-link">Cart (<span id="cart-count">2</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="checkout-container">
+    <div class="checkout-steps">
+      <div class="step active">1. Cart</div>
+      <div class="step active">2. Information</div>
+      <div class="step">3. Payment</div>
+      <div class="step">4. Review</div>
+    </div>
+
+    <div class="checkout-content">
+      <div class="order-summary">
+        <h3>Your Order (2 items)</h3>
+        <div class="order-items">
+          <div class="order-item">
+            <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb" alt="Galaxy S23">
+            <div class="item-details">
+              <h4>Samsung Galaxy S23</h4>
+              <p>Color: Phantom Black</p>
+              <p>Quantity: 1</p>
+              <p class="item-price">$799</p>
+            </div>
+          </div>
+          <div class="order-item">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="AirPods Pro">
+            <div class="item-details">
+              <h4>AirPods Pro</h4>
+              <p>Color: White</p>
+              <p>Quantity: 1</p>
+              <p class="item-price">$249</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-totals">
+          <div class="total-row">
+            <span>Subtotal</span>
+            <span>$1048.00</span>
+          </div>
+          <div class="total-row">
+            <span>Shipping</span>
+            <span>Free</span>
+          </div>
+          <div class="total-row">
+            <span>Tax</span>
+            <span>$62.88</span>
+          </div>
+          <div class="total-row grand-total">
+            <span>Total</span>
+            <span>$1110.88</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-form">
+        <h2>Customer Information</h2>
+        <form id="paymentForm">
+          <div class="form-group">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" placeholder="john@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="address">Shipping Address*</label>
+            <input type="text" id="address" placeholder="123 Main St" required>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city">City*</label>
+              <input type="text" id="city" placeholder="New York" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="zip">ZIP Code*</label>
+              <input type="text" id="zip" placeholder="10001" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" placeholder="+1 (555) 123-4567" required>
+          </div>
+          
+          <h3>Payment Method</h3>
+          <div class="payment-methods">
+            <div class="payment-method">
+              <input type="radio" id="orange" name="payment" value="orange" checked>
+              <label for="orange">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Orange_logo.svg/1200px-Orange_logo.svg.png" alt="Orange Money">
+                Orange Money
+              </label>
+            </div>
+            
+            <div class="payment-method">
+              <input type="radio" id="africell" name="payment" value="africell">
+              <label for="africell">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Africell_Sierra_Leone_logo.png/800px-Africell_Sierra_Leone_logo.png" alt="Africell Money">
+                Africell Money
+              </label>
+            </div>
+            
+            <div class="payment-method">
+              <input type="radio" id="credit" name="payment" value="credit">
+              <label for="credit">
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Credit Card">
+                Credit/Debit Card
+              </label>
+            </div>
+          </div>
+          
+          <div class="payment-details" id="mobile-payment">
+            <div class="form-group">
+              <label for="number">Mobile Number*</label>
+              <input type="text" id="number" placeholder="+232 00 123456" required>
+            </div>
+          </div>
+          
+          <div class="form-group terms">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+          </div>
+          
+          <button type="submit" class="btn btn-primary pay-now-btn">Complete Order</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Deals</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MenaVista. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

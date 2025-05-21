@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MenaVista - Premium Electronics Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MenaVista</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="checkout.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to MenaVista</h1>
+      <p class="hero-subtitle">Your one-stop shop for cutting-edge electronics</p>
+      <p>Discover the latest gadgets at unbeatable prices with fast delivery</p>
+      <div class="hero-buttons">
+        <a href="products.html" class="btn btn-primary">Shop Now</a>
+        <a href="#featured" class="btn btn-outline">Featured Products</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured" class="featured-products">
+    <div class="section-header">
+      <h2>Featured Products</h2>
+      <p>Handpicked selection of our premium products</p>
+    </div>
+    
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-badge">Best Seller</div>
+        <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb" alt="Galaxy S23">
+        <div class="product-info">
+          <h3>Samsung Galaxy S23</h3>
+          <div class="product-rating">★★★★★ <span>(128)</span></div>
+          <p class="price">$799 <span class="old-price">$899</span></p>
+          <button class="add-to-cart" data-name="Samsung Galaxy S23" data-price="799">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9" alt="MacBook Pro">
+        <div class="product-info">
+          <h3>MacBook Pro M2</h3>
+          <div class="product-rating">★★★★☆ <span>(189)</span></div>
+          <p class="price">$1299</p>
+          <button class="add-to-cart" data-name="MacBook Pro M2" data-price="1299">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-badge">New</div>
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="AirPods Pro">
+        <div class="product-info">
+          <h3>AirPods Pro (2nd Gen)</h3>
+          <div class="product-rating">★★★★★ <span>(312)</span></div>
+          <p class="price">$249</p>
+          <button class="add-to-cart" data-name="AirPods Pro (2nd Gen)" data-price="249">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/29020349/pexels-photo-29020349/free-photo-of-modern-smartphone-on-wooden-surface.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="iPhone15 Pro">
+        <div class="product-info">
+          <h3>iPhone 15 Pro</h3>
+          <div class="product-rating">★★★★☆ <span>(189)</span></div>
+          <p class="price">$1200</p>
+          <button class="add-to-cart" data-name="MacBook Pro M2" data-price="1299">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="section-header">
+      <h2>Why Choose TechMart</h2>
+      <p>We're committed to excellence in every aspect</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3062/3062633.png" alt="Quality">
+        <h3>Premium Quality</h3>
+        <p>All products meet our rigorous quality standards before reaching you</p>
+      </div>
+      
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/633/633816.png" alt="Shipping">
+        <h3>Fast Shipping</h3>
+        <p>Get your orders delivered within 2-3 business days</p>
+      </div>
+      
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Security">
+        <h3>Secure Payments</h3>
+        <p>Your transactions are protected with 256-bit encryption</p>
+      </div>
+      
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006585.png" alt="Support">
+        <h3>24/7 Support</h3>
+        <p>Our team is always ready to assist you</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h3>Stay Updated</h3>
+      <p>Subscribe for exclusive deals and tech news</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Deals</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MenaVista. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

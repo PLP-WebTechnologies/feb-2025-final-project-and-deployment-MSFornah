@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - MenaVista</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MenaVista</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="checkout.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products-header">
+    <h1>Our Products</h1>
+    <p>Discover the latest tech gadgets at unbeatable prices</p>
+  </section>
+
+  <section class="products-filter">
+    <div class="filter-options">
+      <button class="filter-btn active" data-category="all">All Products</button>
+      <button class="filter-btn" data-category="phones">Smartphones</button>
+      <button class="filter-btn" data-category="laptops">Laptops</button>
+      <button class="filter-btn" data-category="accessories">Accessories</button>
+    </div>
+  </section>
+
+  <section class="products-grid">
+    <div class="product-card" data-category="phones">
+      <div class="product-badge">New</div>
+      <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb" alt="Galaxy S23">
+      <div class="product-info">
+        <h3>Samsung Galaxy S23</h3>
+        <div class="product-rating">★★★★★ <span>(128)</span></div>
+        <p class="price">$799 <span class="old-price">$899</span></p>
+        <button class="add-to-cart" data-name="Samsung Galaxy S23" data-price="799">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="phones">
+      <img src="https://images.unsplash.com/photo-1632660677898-2dbb9f766a0d" alt="iPhone 15">
+      <div class="product-info">
+        <h3>iPhone 15 Pro</h3>
+        <div class="product-rating">★★★★★ <span>(245)</span></div>
+        <p class="price">$999</p>
+        <button class="add-to-cart" data-name="iPhone 15 Pro" data-price="999">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="laptops">
+      <div class="product-badge">Sale</div>
+      <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9" alt="MacBook Pro">
+      <div class="product-info">
+        <h3>MacBook Pro M2</h3>
+        <div class="product-rating">★★★★☆ <span>(189)</span></div>
+        <p class="price">$1299 <span class="old-price">$1499</span></p>
+        <button class="add-to-cart" data-name="MacBook Pro M2" data-price="1299">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="laptops">
+      <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45" alt="Dell XPS">
+      <div class="product-info">
+        <h3>Dell XPS 15</h3>
+        <div class="product-rating">★★★★☆ <span>(156)</span></div>
+        <p class="price">$1599</p>
+        <button class="add-to-cart" data-name="Dell XPS 15" data-price="1599">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="accessories">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="AirPods Pro">
+      <div class="product-info">
+        <h3>AirPods Pro</h3>
+        <div class="product-rating">★★★★★ <span>(312)</span></div>
+        <p class="price">$249</p>
+        <button class="add-to-cart" data-name="AirPods Pro" data-price="249">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="accessories">
+      <div class="product-badge">-20%</div>
+      <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" alt="Apple Watch">
+      <div class="product-info">
+        <h3>Apple Watch Series 8</h3>
+        <div class="product-rating">★★★★☆ <span>(178)</span></div>
+        <p class="price">$399 <span class="old-price">$499</span></p>
+        <button class="add-to-cart" data-name="Apple Watch Series 8" data-price="399">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Deals</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MenaVista. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
