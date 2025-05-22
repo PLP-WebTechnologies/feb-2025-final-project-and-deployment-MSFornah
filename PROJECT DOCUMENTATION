@@ -1,5 +1,7 @@
 # **MenaVista E-Commerce Website - Project Documentation**  
 
+NOTE:  THE LINK TO THE LIVE WEBSITE IS IN THE README.MD FILE.
+
 ## **1. Project Overview**  
 **MenaVista** is a fully responsive e-commerce website designed to showcase and sell electronics products. It includes essential e-commerce functionalities such as product listings, a shopping cart, checkout process, and contact forms. This documentation provides a detailed explanation of the project’s structure, features, and implementation.  
 
@@ -132,5 +134,3 @@ It is suitable for a **diploma project** and can be extended with additional fea
 - **No backend** (uses `localStorage` for demo purposes).  
 - **Pure HTML/CSS/JS** (no frameworks used).  
 - **Easy to modify** (change colors, products, text).  
-
-Would you like a **user manual** or **deployment guide** as well? Let me know how I can further assist! 🚀
